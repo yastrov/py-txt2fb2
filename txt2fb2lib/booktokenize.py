@@ -20,7 +20,7 @@ from collections import namedtuple
 
 Data = namedtuple('Data', ["string", "tag", "pos", 'line_num', 'line_val'])
 
-from .tokenlist import token_list
+from txt2fb2lib.tokenlist import token_list
 
 def _compile(expr):
     return re.compile(expr, re.UNICODE)

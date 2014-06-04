@@ -30,11 +30,11 @@ class STATE(Enum):
     MAKING_IMG = 4
     INIT = 5
 
-from .titlematcher import testTitle, testNewPart
+from txt2fb2lib.titlematcher import testTitle, testNewPart
 testTitle = re.compile(testTitle, re.UNICODE)
 testNewPart = re.compile(testNewPart, re.UNICODE)
-from .fb2creator import FB2Creator
-from .booktokenize import tokenize, Data
+from txt2fb2lib.fb2creator import FB2Creator
+from txt2fb2lib.booktokenize import tokenize, Data
 
 def stack_to_str(__stack):
     while __stack and __stack[0].tag == "SPACE":
